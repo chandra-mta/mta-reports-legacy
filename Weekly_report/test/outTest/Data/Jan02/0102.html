@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>M&TA Monitoring Report 12/27/24 - 01/02/25 </title>						<!-- ### update ### -->
+
+    <link rel="stylesheet" type="text/css" href='https://cxc.cfa.harvard.edu/mta/REPORTS/Template/mta.css' />
+
+    <script language="JavaScript">
+    	function WindowOpener(imgname) {
+    		msgWindow = open("","displayname","toolbar=no,directories=no,menubar=no,location=no,scrollbars=no,status=no,,width=1229,height=936,resize=no");
+    		msgWindow.document.clear();
+    		msgWindow.document.write("<html><title>Trend plot:   "+imgname+"</TITLE>");
+    		msgWindow.document.write("<body bgcolor='black'>");
+    		msgWindow.document.write("<img src='/mta/DAILY/mta_deriv/"+imgname+"' border =0 ><p></p></body></html>")
+    		msgWindow.document.close();
+    		msgWindow.focus();
+    	}
+
+    	function WindowOpener2(imgname) {
+    		msgWindow = open("","displayname","toolbar=no,directories=no,menubar=no,location=no,scrollbars=no,status=no,,width=760,height=550,resize=no");
+    		msgWindow.document.clear();
+    		msgWindow.document.write("<html><title>IRU Trend plot:   "+imgname+"</TITLE>");
+    		msgWindow.document.write("<body bgcolor='black'>");
+    		msgWindow.document.write("<img src='/data/mta4/www/DAILY/mta_pcad/IRU/Plots_new/"+imgname+"' border =0 ><p></p></body></html>")
+    		msgWindow.document.close();
+    		msgWindow.focus();
+    	}
+
+    	function WindowOpener3(imgname) {
+    		msgWindow = open("","displayname","toolbar=no,directories=no,menubar=no,location=no,scrollbars=yes,status=no,,width=1000,height=1500,resize=no");
+    		msgWindow.document.clear();
+    		msgWindow.document.write("<html><title>Trend plot:   "+imgname+"</TITLE>");
+    		msgWindow.document.write("<body bgcolor='black'>");
+    		msgWindow.document.write("<iframe src='" +imgname+ "' border =0 width=980 height=1480><p></p></body></html>")
+    		msgWindow.document.close();
+    		msgWindow.focus();
+        }
+    </script>
+
+</head>
+
+
+
+<body>
+
+<!-- ### REPORT STARTS HERE ### -->
+
+<h1>   MTA Monitoring Report 12/27/24 - 01/02/25    </h1>						<!-- ### update ### -->
+
+
+<p style='text-align:right'>
+<a href ="/mta/REPORTS/"> <strong>Archive of all weekly reports</strong> </a>
+<br />
+<a href="/mta/REPORTS/MONTHLY"> <strong>Archive of monthly reports</strong></a>
+</p>
+
+<hr />
+
+<!-- ### READIATION REPORT ### -->
+<h2><a href="/mta/RADIATION">Radiation</a></h2>
+<!--
+<p>
+Observing stopped by ground activation of SCS-107 at 2015:173:22:40z.
+</p>
+<p>
+<img src='./20150622_goes.png', width='80%'>
+</p>
+-->
+
+<p>
+Quiet
+</p>
+
+
+<!-- ### CTI REPORT ### -->
+
+<h2><a href="/mta_days/mta_cti/cti_page.html">Detrended CTI </a></h2>
+
+<p>
+Although we prefer to quote CTI values of the cleanest data (FT <= -119.7 C, int time > 7000sec), 
+the data that fulfills these conditions are getting rare. We now quote CTI based on temperature 
+corrected data for Focal plane temperature <= -118.5 C).
+
+</p>
+
+<p>
+The unit is now CTI/year not CTI/day.
+</p>
+
+<p>
+<table class='emshift'>
+<tr>
+<th>Average of ACIS-I CCDs (MnKa) slope: </th><td> 5.214e-02 CTI/year </td><td> (1.428e-04 CTI/day) </td>	
+</tr><tr>
+<th>Detrended slope:                     </th><td> 4.865e-02 CTI/year </td><td> (1.333e-04 CTI/day) </td>
+</tr>
+</table>
+</p>
+
+
+<!-- ### BAD PIXEL REPORT ### -->
+
+<h2><a href="/mta_days/mta_bad_pixel/mta_bad_pixel_list.html"> ACIS Warm Pixels </a></h2>
+
+<p>
+We display all bad pixels that have showed up in past, and, if any, previously unknown bad pixels appeared 
+in the last 14 days. We also list hot pixels (defined as 1000 above the average of bias background). Warm 
+columns 509-514 are probably due to boundaries.
+</p>
+<p style='font-color:orange'>
+New definitions of warm pixels and flickering pixels (May 15, 2014). If a pixel displays the level beyond 
+a threshold for more than 70% of the time in the past two weeks, the pixel is categorized as a "warm" pixel. 
+If a pixel is above the threshold more than 30% of time but less than 70% of the time in the past two weeks, 
+the pixel is categorized as a "flickering" pixel.
+</p>
+
+<table border=1 cellpadding=3>
+<!--
+<tr align=center><th>&#160<th>CCD0<th>CCD1<th>CCD2<th>CCD3<th>CCD4<th>CCD5<th>CCD6<th>CCD7<th>CCD8<th>CCD9</tr>
+-->
+<!-- BAD PIXEL TABLE START -->
+
+
+<table border=1 cellpadding=3><tr align=center><th>&#160</th><th>CCD0</th><th>CCD1</th><th>CCD2</th><th>CCD3</th><th>CCD4</th><th>CCD5</th><th>CCD6</th><th>CCD7</th><th>CCD8</th><th>CCD9</th></tr><tr style="text-align:center"><td>Previously Unknown Bad Pixels</td>
+<!-- ccd0 -->
+<td>
+&#160;
+</td>
+<!-- ccd1 -->
+<td>
+&#160;
+</td>
+<!-- ccd2 -->
+<td>
+&#160;
+</td>
+<!-- ccd3 -->
+<td>
+&#160;
+</td>
+<!-- ccd4 -->
+<td>
+&#160;
+</td>
+<!-- ccd5 -->
+<td>
+&#160;
+</td>
+<!-- ccd6 -->
+<td>
+&#160;
+</td>
+<!-- ccd7 -->
+<td>
+&#160;
+</td>
+<!-- ccd8 -->
+<td>
+&#160;
+</td>
+<!-- ccd9 -->
+<td>
+&#160;
+</td>
+</tr>
+
+<tr style="text-align:center"><td>Current Warm  Pixels</td>
+<!-- ccd0 -->
+<td>
+&#160;
+</td>
+<!-- ccd1 -->
+<td>
+(985,393)
+(910,239)
+</td>
+<!-- ccd2 -->
+<td>
+(837,378)
+(178,149)
+(803,225)
+(104,31)
+(526,66)
+(99,899)
+</td>
+<!-- ccd3 -->
+<td>
+(21,95)
+</td>
+<!-- ccd4 -->
+<td>
+&#160;
+</td>
+<!-- ccd5 -->
+<td>
+&#160;
+</td>
+<!-- ccd6 -->
+<td>
+(670,387)
+</td>
+<!-- ccd7 -->
+<td>
+(335,412)
+</td>
+<!-- ccd8 -->
+<td>
+&#160;
+</td>
+<!-- ccd9 -->
+<td>
+&#160;
+</td>
+</tr>
+
+<tr style="text-align:center"><td>Flickering Warm Pixels</td>
+<!-- ccd0 -->
+<td>
+(283,278)
+</td>
+<!-- ccd1 -->
+<td>
+(370,70)
+(427,125)
+(802,665)
+</td>
+<!-- ccd2 -->
+<td>
+(726,537)
+(665,25)
+(353,201)
+</td>
+<!-- ccd3 -->
+<td>
+(931,553)
+(680,391)
+(617,159)
+(394,80)
+(811,637)
+</td>
+<!-- ccd4 -->
+<td>
+&#160;
+</td>
+<!-- ccd5 -->
+<td>
+(161,206)
+(367,511)
+(282,385)
+(233,227)
+(357,303)
+(263,317)
+(877,408)
+(233,102)
+(369,376)
+(669,577)
+(728,340)
+</td>
+<!-- ccd6 -->
+<td>
+(849,169)
+(1000,214)
+(884,31)
+</td>
+<!-- ccd7 -->
+<td>
+&#160;
+</td>
+<!-- ccd8 -->
+<td>
+(597,187)
+(881,53)
+(838,239)
+(893,490)
+(332,324)
+(139,109)
+(675,304)
+(182,474)
+(275,393)
+(136,65)
+</td>
+<!-- ccd9 -->
+<td>
+(150,374)
+(749,477)
+</td>
+</tr>
+
+<tr style="text-align:center"><td>Current Hot Pixels</td>
+<!-- ccd0 -->
+<td>
+&#160;
+</td>
+<!-- ccd1 -->
+<td>
+&#160;
+</td>
+<!-- ccd2 -->
+<td>
+&#160;
+</td>
+<!-- ccd3 -->
+<td>
+&#160;
+</td>
+<!-- ccd4 -->
+<td>
+&#160;
+</td>
+<!-- ccd5 -->
+<td>
+&#160;
+</td>
+<!-- ccd6 -->
+<td>
+&#160;
+</td>
+<!-- ccd7 -->
+<td>
+&#160;
+</td>
+<!-- ccd8 -->
+<td>
+&#160;
+</td>
+<!-- ccd9 -->
+<td>
+&#160;
+</td>
+</tr>
+
+<tr style="text-align:center"><td>Flickering Hot Pixels</td>
+<!-- ccd0 -->
+<td>
+&#160;
+</td>
+<!-- ccd1 -->
+<td>
+&#160;
+</td>
+<!-- ccd2 -->
+<td>
+&#160;
+</td>
+<!-- ccd3 -->
+<td>
+&#160;
+</td>
+<!-- ccd4 -->
+<td>
+&#160;
+</td>
+<!-- ccd5 -->
+<td>
+&#160;
+</td>
+<!-- ccd6 -->
+<td>
+&#160;
+</td>
+<!-- ccd7 -->
+<td>
+&#160;
+</td>
+<!-- ccd8 -->
+<td>
+&#160;
+</td>
+<!-- ccd9 -->
+<td>
+&#160;
+</td>
+</tr>
+
+<tr style="text-align:center"><td>Warm column candidates</td>
+<!-- ccd0 -->
+<td>
+&#160;
+</td>
+<!-- ccd1 -->
+<td>
+&#160;
+</td>
+<!-- ccd2 -->
+<td>
+&#160;
+</td>
+<!-- ccd3 -->
+<td>
+&#160;
+</td>
+<!-- ccd4 -->
+<td>
+&#160;
+</td>
+<!-- ccd5 -->
+<td>
+512
+510
+1022
+</td>
+<!-- ccd6 -->
+<td>
+&#160;
+</td>
+<!-- ccd7 -->
+<td>
+512
+1022
+</td>
+<!-- ccd8 -->
+<td>
+&#160;
+</td>
+<!-- ccd9 -->
+<td>
+&#160;
+</td>
+</tr>
+
+<tr style="text-align:center"><td>Flickering Warm column candidates</td>
+<!-- ccd0 -->
+<td>
+&#160;
+</td>
+<!-- ccd1 -->
+<td>
+&#160;
+</td>
+<!-- ccd2 -->
+<td>
+&#160;
+</td>
+<!-- ccd3 -->
+<td>
+&#160;
+</td>
+<!-- ccd4 -->
+<td>
+&#160;
+</td>
+<!-- ccd5 -->
+<td>
+&#160;
+</td>
+<!-- ccd6 -->
+<td>
+&#160;
+</td>
+<!-- ccd7 -->
+<td>
+&#160;
+</td>
+<!-- ccd8 -->
+<td>
+&#160;
+</td>
+<!-- ccd9 -->
+<td>
+&#160;
+</td>
+</tr>
+
+
+
+</table>
+
+<!-- BAD PIXEL TABLE END  -->
+
+<br>
+
+<!-- ### FOCAL TEMPERATURE REPORT ### -->
+
+<h2><a href="https://cxc.cfa.harvard.edu/mta_days/mta_fp/main_fp_temp.html"> ACIS Focal Plane Temperature </a></h2>
+<p>
+For this period, 6  peaks are  observed. 									<!-- ### update ### -->
+</p>
+
+<ul>
+<table class='emshift'>
+<tr><th class='uline'>Day (DOY)</th><th class='uline'>Temp (C)</th><th class='uline'>Width (Days)</th><th>&#160</th></tr>
+
+<!-- ////  EXAMPLE INPUT LINE ///
+<tr align=center><td> 356.83 </td><td> -107.09 </td><td> 0.29 <td align=left>&#160</td></tr>	
+-->
+<tr align=center><td>359.40</td><td>-116.00</td><td>0.11</td></tr>
+<tr align=center><td>359.64</td><td>-108.74</td><td>0.62</td></tr>
+<tr align=center><td>360.32</td><td>-107.97</td><td>0.53</td></tr>
+<tr align=center><td>361.04</td><td>-106.31</td><td>0.74</td></tr>
+<tr align=center><td>361.94</td><td>-109.86</td><td>0.97</td></tr>
+<tr align=center><td>363.66</td><td>-103.10</td><td>4.25</td></tr>
+
+</table>
+<br />
+</ul>
+
+<p>
+Weekly focal plane temperature with sun angle, earth angle, and altitude overplotted.  
+Sun angle is the solar array angle, that is the angle between the sun and the optical axis (+X axis).  
+The earth angle is the angle between earth and the ACIS radiator (+Z axis).  
+Altitude varies from 34 kkm to 128 kkm.
+</p>
+<br />
+
+<div style='text-align:center'>
+<img src="0102_fptemp.png" style="width:90%;"><br /> 				      					<!-- ### update ### -->
+</div>
+
+
+
+<!-- ### SIM MOVEMENT ### -->
+
+<h2><a href ="/mta_days/mta_sim/">SIM Movements</a></h2>
+
+<p>
+17 TSC moves this period<br />
+<ul>
+<table class='emshift'>
+<tr>
+<th style='text-align:left'>weekly average time/step</th><td>  0.00135 s </td> 				<!-- ### update ### -->
+</tr><tr> 
+<th style='text-align:left'>mission average time/step</th><td> 0.00132 s </td>				<!-- ### update ### -->
+
+</tr>
+</table>
+</ul>
+</p>
+
+
+<!-- ### TELEMETRY ### -->
+
+<h2><a href="/mta_days/ap_report/mta_days.html">Telemetry</a></h2>
+<p>
+New violations or new extrema are shown in <em style='font-style:normal; color:#0000ff'>blue cells</em>.
+</p>
+
+<!-- START INSERT TELEM TABLE HERE -->
+
+<table border=1>
+<tr><td>MSID</td>
+<td>12/27/24</td>
+<td>12/28/24</td>
+<td>12/29/24</td>
+<td>12/30/24</td>
+<td>12/31/24</td>
+<td>01/01/25</td>
+<td>01/02/25</td>
+<td><em class='yellow'>yellow limits<br />(lower)<br />upper</em>
+<td><em class='red'>red limits<br />(lower)<br />upper</em>
+<td>Units <td>Description</td></tr>
+<tr><td>AFTBLKHDT</td>
+<td>&#160;</td>
+<td><em class="red">308.47</em></td>
+<td>&#160;</td>
+<td><em class="red">308.62</em></td>
+<td>&#160;</td>
+<td><em class="red">310.14</em></td>
+<td>&#160;</td>
+<td>(260.2)<br>303.0</td>
+<td>(250.2)<br>308.0</td>
+<td>TEMP</td><td>AFT BULKHEAD TEMP</td></tr>
+
+<tr><td>AWD1TQI</td>
+<td>&#160;</td>
+<td><em class="red">(-3.39)</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>(-1.22)<br>1.22</td>
+<td>(-3.3)<br>3.3</td>
+<td>AMP</td><td>WHEEL 1 TORQUE CURRENT</td></tr>
+
+<tr><td>AWD4TQI</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><em class="red">(-3.43)</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>(-1.22)<br>1.22</td>
+<td>(-3.3)<br>3.3</td>
+<td>AMP</td><td>WHEEL 4 TORQUE CURRENT</td></tr>
+
+<tr><td>AWD6TQI</td>
+<td>&#160;</td>
+<td><em class="red">(-3.47)</em></td>
+<td>&#160;</td>
+<td><em class="red">(-3.39)</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>(-1.22)<br>1.22</td>
+<td>(-3.3)<br>3.3</td>
+<td>AMP</td><td>WHEEL 6 TORQUE CURRENT</td></tr>
+
+<tr><td>CALPALV</td>
+<td><em class="red">(112.00)</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>(126.0)<br>128.0</td>
+<td>(125.0)<br>129.0</td>
+<td>V</td><td>Cal Pulser Amplitude</td></tr>
+
+<tr><td>CTXBPWR</td>
+<td>&#160;</td>
+<td><em class="red">(0.00)</em></td>
+<td><em class="red">(0.00)</em></td>
+<td>&#160;</td>
+<td><em class="red">(0.00)</em></td>
+<td><em class="red">(0.00)</em></td>
+<td>&#160;</td>
+<td>(36.12)<br>37.0</td>
+<td>(36.0)<br>38.0</td>
+<td>DBM</td><td>TRANSMITTER B OUTPUT POWER</td></tr>
+
+<tr><td>HRMAAVG</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><em class="red">(304.47)</em></td>
+<td><em class="red">(304.70)</em></td>
+<td>(306.0)<br>308.0</td>
+<td>(305.0)<br>309.0</td>
+<td>K</td><td>AVG OF HRMA METRICS</td></tr>
+
+<tr><td>IMHBLV</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><em class="red">(0.00)</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>(126.0)<br>128.0</td>
+<td>(125.0)<br>129.0</td>
+<td>(2IMHBLV)</td><td>Imaging Bot & Top MCP HV Monitor</td></tr>
+
+<tr><td>IMHVLV</td>
+<td><em class="red">(79.00)</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>(126.0)<br>128.0</td>
+<td>(125.0)<br>129.0</td>
+<td>(2IMHVLV)</td><td>Imaging Bot MCP HV Monitor</td></tr>
+
+<tr><td>MZOBACONE</td>
+<td><em class="red">313.50</em></td>
+<td><em class="red">315.11</em></td>
+<td><em class="red">311.83</em></td>
+<td><em class="red">315.32</em></td>
+<td><em class="red">313.82</em></td>
+<td>&#160;</td>
+<td><em class="red">314.07</em></td>
+<td>(260.2)<br>303.0</td>
+<td>(250.2)<br>308.0</td>
+<td>CONE</td><td>-Z SIDE OBA CONE</td></tr>
+
+<tr><td>OBAAVG</td>
+<td>&#160;</td>
+<td><em class="red">306.15</em></td>
+<td><em class="red">304.32</em></td>
+<td><em class="red">306.57</em></td>
+<td><em class="red">305.03</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>(282.5)<br>300.0</td>
+<td>(281.4)<br>301.0</td>
+<td>K</td><td>OBA/TFTE TEMP</td></tr>
+
+<tr><td>OBADIAGRAD</td>
+<td><em class="red">4.65</em></td>
+<td><em class="red">4.59</em></td>
+<td><em class="red">4.44</em></td>
+<td><em class="red">4.34</em></td>
+<td><em class="red">4.56</em></td>
+<td><em class="red">4.42</em></td>
+<td><em class="red">4.59</em></td>
+<td>(-1.11)<br>3.5</td>
+<td>(-2.78)<br>3.9</td>
+<td>K</td><td>OBA DIAM GRAD</td></tr>
+
+<tr><td>PZOBACONE</td>
+<td><em class="red">309.70</em></td>
+<td><em class="red">310.95</em></td>
+<td><em class="red">308.45</em></td>
+<td><em class="red">311.40</em></td>
+<td><em class="red">309.42</em></td>
+<td><em class="red">312.40</em></td>
+<td><em class="red">309.94</em></td>
+<td>(260.2)<br>303.0</td>
+<td>(250.2)<br>308.0</td>
+<td>CONE</td><td>+Z SIDE OBA CONE</td></tr>
+
+<tr><td>TCYZ_RW6</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td><em class="red">(276.07)</em></td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>(288.15)<br>363.15</td>
+<td>(278.15)<br>404.15</td>
+<td>K</td><td>RWA -6 TEMP (RWA CRNR COMP)</td></tr>
+
+<tr><td>TFTERANGE</td>
+<td>&#160;</td>
+<td><em class="red">48.10</em></td>
+<td><em class="red">49.78</em></td>
+<td><em class="red">48.89</em></td>
+<td><em class="red">49.19</em></td>
+<td>&#160;</td>
+<td><em class="red">48.78</em></td>
+<td>(16.7)<br>37.5</td>
+<td>(11.1)<br>45.0</td>
+<td>K</td><td>TFTE VENT/RAD TEMP</td></tr>
+
+</table>
+
+
+<!-- END INSERT TELEM TABLE HERE -->
+</ul>
+
+<br /><br />
+
+ 
+<!-- ###  IRU REPORT ### -->
+
+<H2><a href="/mta/DAILY/mta_pcad/IRU/iru_bias_trend.html"> IRUs</a></H2>
+<!--
+<H2><a href="/mta_days/mta_pcad/IRU/bias.html"> IRUs</a></H2>
+<ul>
+<li><a href="/mta_days/mta_pcad/IRU/Plots/2025/2024_362_002_bias.gif">Gyro Bias Drift</a>		
+<li><a href="/mta_days/mta_pcad/IRU/Plots/2025/2024_362_002_hist.gif">Gyro Bias Drift Histogram</a>	
+</ul>
+-->
+<table border=0 style='margin-left:auto;margin-right:auto;'>
+    <tr>
+        <th style='width:45%;'>Gyro Bias Drift</th>
+        <th style='width:45%;'>Gyro Bias Drift Histogram</th>
+    </tr>
+    <tr>
+        <td style='width:45%;'>
+            <img src='/mta/DAILY/mta_pcad/IRU/Plots_new/2025/2024_362_002_bias.png' style='width:90%;text-align:center;'>
+        </td>
+        <td style='width:45%;'>
+            <img src='/mta/DAILY/mta_pcad/IRU/Plots_new/2025/2024_362_002_hist.png' style='width:90%;text-align:center;'>
+        </td>
+    </tr>
+</table>
+
+
+<!-- ### RECENT OBSERVATIONS ### -->
+
+<h2> <a href="/mta_days/ap_report/events/mta_events.html"> Recent Observations</a></h2>
+
+<p>
+<!--
+<table border=0 width=100%>
+<tr><th class='uline'>OBSID</th>
+    <th class='uline'>DETECTOR</th>
+    <th class='uline'>GRATING</th>
+    <th class='uline' style='text-align:left'>TARGET</th>
+    <th class='uline'>ANALYSIS</th>
+    <th class='uline'>ACA</th></tr>
+-->
+
+<!-- PHOTON SUMMARY BEGIN -->
+
+<table border=0 width=100%>
+<tr>
+<th style='text-decoration:underline;text-align:center;'>OBSID</th>
+<th style='text-decoration:underline;text-align:center;'>DETECTOR</th>
+<th style='text-decoration:underline;text-align:center;'>GRATING</th>
+<th style='text-decoration:underline;text-align:left;'>TARGET</th>
+<th style='text-decoration:underline;text-align:center;'>ANALYSIS</th>
+<th style='text-decoration:underline;text-align:center;'>ACA</th>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30697">30697</a></td>
+<td>ACIS-67</td>
+<td>NONE</td>
+<td style="text-align:left;">NGC1300</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30697/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30697/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30502">30502</a></td>
+<td>ACIS-56789</td>
+<td>HETG</td>
+<td style="text-align:left;">Vela X-1</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30502/event.html">OK</a>/NA
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30502/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30081">30081</a></td>
+<td>ACIS-0123</td>
+<td>NONE</td>
+<td style="text-align:left;">NGC1977 point</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30081/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30081/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=28561">28561</a></td>
+<td>ACIS-67</td>
+<td>NONE</td>
+<td style="text-align:left;">PSO J170.8326+20.2083</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/28561/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/28561/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30503">30503</a></td>
+<td>ACIS-56789</td>
+<td>HETG</td>
+<td style="text-align:left;">Vela X-1</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30503/event.html">OK</a>/NA
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30503/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30444">30444</a></td>
+<td>HRC-I</td>
+<td>NONE</td>
+<td style="text-align:left;">HE 1353-1917</td>
+<td>
+<a href="/mta_days/ap_report/events/hrc/30444/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30444/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30687">30687</a></td>
+<td>ACIS-67</td>
+<td>NONE</td>
+<td style="text-align:left;">2MASXJ06591070+2401400</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30687/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30687/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30164">30164</a></td>
+<td>ACIS-3678</td>
+<td>NONE</td>
+<td style="text-align:left;">NGC4207</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30164/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30164/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=29841">29841</a></td>
+<td>ACIS-0123</td>
+<td>NONE</td>
+<td style="text-align:left;">PSR J1958+2846</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/29841/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/29841/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=29635">29635</a></td>
+<td>ACIS-0123</td>
+<td>NONE</td>
+<td style="text-align:left;">Perseus cluster E</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/29635/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/29635/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=28078">28078</a></td>
+<td>ACIS-67</td>
+<td>NONE</td>
+<td style="text-align:left;">PS15bva KISS15s</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/28078/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/28078/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30695">30695</a></td>
+<td>ACIS-67</td>
+<td>NONE</td>
+<td style="text-align:left;">Gaia DR2 3428357798930628096</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30695/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30695/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30698">30698</a></td>
+<td>ACIS-67</td>
+<td>NONE</td>
+<td style="text-align:left;">NGC1300</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30698/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30698/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30699">30699</a></td>
+<td>ACIS-0123</td>
+<td>NONE</td>
+<td style="text-align:left;">PSR J1958+2846</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30699/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30699/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30699">30699</a></td>
+<td>ACIS-0123</td>
+<td>NONE</td>
+<td style="text-align:left;">PSR J1958+2846</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30699/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30699/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30486">30486</a></td>
+<td>HRC-I</td>
+<td>NONE</td>
+<td style="text-align:left;">SN 2002ap</td>
+<td>
+<a href="/mta_days/ap_report/events/hrc/30486/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30486/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30038">30038</a></td>
+<td>ACIS-567</td>
+<td>NONE</td>
+<td style="text-align:left;">ACT-CL J2151.9+1113</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30038/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30038/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=28631">28631</a></td>
+<td>ACIS-0123</td>
+<td>NONE</td>
+<td style="text-align:left;">Abell 370</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/28631/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/28631/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30497">30497</a></td>
+<td>ACIS-56789</td>
+<td>HETG</td>
+<td style="text-align:left;">Vela X-1</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30497/event.html">OK</a>/NA
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30497/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30690">30690</a></td>
+<td>ACIS-0123</td>
+<td>NONE</td>
+<td style="text-align:left;">UGC 03698</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30690/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30690/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30700">30700</a></td>
+<td>ACIS-0123</td>
+<td>NONE</td>
+<td style="text-align:left;">PSR J1958+2846</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30700/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30700/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30550">30550</a></td>
+<td>HRC-S</td>
+<td>LETG</td>
+<td style="text-align:left;">NGC 5548</td>
+<td>
+<a href="/mta_days/ap_report/events/hrc/30550/event.html">OK</a>/NA
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30550/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30707">30707</a></td>
+<td>ACIS-0123</td>
+<td>NONE</td>
+<td style="text-align:left;">Orion Nebula Cluster</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30707/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30707/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30552">30552</a></td>
+<td>HRC-S</td>
+<td>LETG</td>
+<td style="text-align:left;">NGC 5548</td>
+<td>
+<a href="/mta_days/ap_report/events/hrc/30552/event.html">OK</a>/NA
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30552/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=29750">29750</a></td>
+<td>ACIS-678</td>
+<td>NONE</td>
+<td style="text-align:left;">1eRASS J012710.5-285542</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/29750/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/29750/aca.html">OK</a></td>
+</tr>
+<tr align=center>
+<td><a href="http://acisweb.mit.edu/cgi-bin/get-obsid?id=30708">30708</a></td>
+<td>ACIS-0123</td>
+<td>NONE</td>
+<td style="text-align:left;">Orion Nebula Cluster</td>
+<td>
+<a href="/mta_days/ap_report/events/acis/30708/event.html">OK</a>
+</td>
+<td><a href="/mta_days/ap_report/events/aca/30708/aca.html">OK</a></td>
+</tr>
+</table>
+
+
+<!-- PHOTON SUMMARY END -->
+
+</p>
+
+<!-- ### TRENDING ### -->
+
+<h2><a href ="https://cxc.cfa.harvard.edu/mta/MSID_Trends/mta_trending_main.html">Trending</a> </h2>
+
+
+<p>
+This week's focus is
+<em  style='font-style:normal; color:#B0E0E6'>
+<strong>Gratings</strong>							<!-- ### update ### -->
+</em>
+</p>
+
+<p>
+Last reported on
+<a href ="/mta/REPORTS/2024/1017.html">Oct 17</a>. <br>						<!-- ### update ### -->
+</p>
+
+<p>
+Only the most interesting or representative msids are shown below.
+For a full listing choose the bulletted link.<br>
+</p>
+
+<!--
+<p>
+Min/max envelopes in dark blue appear on the trending plots. The envelopes are 4th degree 
+fits to the monthly minimum and maximum values for each MSID.
+
+The final polynomial form and binning are still being experimented with.  We will soon add 
+to the trending pages a report of the fits and predictions they give on future limit violations.  
+The light blue curve is our original smoothing of all the data over 30 day moving boxcars.  
+The green/yellow line is a linear fit to all the data; the break occurs at a limit change.
+</p>
+-->
+
+<br />
+
+
+<!-- ### EXAMPLE ###
+<ul>
+<div style="color:#FFFFFF"><li><a href="/mta/DAILY/mta_deriv/xxxxx.html">xxxx</a></li></div>
+<table border=1 cellpadding=3>
+<tr align=center><td colspan=7></tr>
+<tr align=center><td>MSID<td> MEAN<td> RMS<td> DELTA/YR<td> DELTA/YR/YR<td> UNITS<td>DESCRIPTION</tr>
+
+</table>
+</ul>
+
+
+-->
+<ul><li><h3><a href="https://cxc.cfa.harvard.edu/mta/MSID_Trends/Gratgen/gratgen_mid_static_long_main.html">Gratings</a></h3></li></ul>
+<table border=1 cellpadding=3 cellspacing=2 style="margin-left:auto;margin-right:auto;text-align:center;">
+<th>MSID</th><th></th><th>Mean</th><th>RMS</th><th>Delta/Yr</th><th>Delta/Yr/Yr</th><th>Unit</th><th>Description</th>
+<tr><th><a href="javascript:WindowOpener3('https://cxc.cfa.harvard.edu/mta/MSID_Trends/Gratgen/4hposaro/4hposaro_mid_static_long_plot.html')">4hposaro</th><td>&#160;</td><td>-0.155</td><td>0.029</td><td>67.81 +/- 20.17</td><td>0.76 +/- 0.83</td><td>na</td><td>NA</td></tr>
+<tr><th><a href="javascript:WindowOpener3('https://cxc.cfa.harvard.edu/mta/MSID_Trends/Gratgen/4hposbro/4hposbro_mid_static_long_plot.html')">4hposbro</th><td>&#160;</td><td>-0.151</td><td>0.029</td><td>68.39 +/- 20.39</td><td>0.77 +/- 0.84</td><td>na</td><td>NA</td></tr>
+<tr><th><a href="javascript:WindowOpener3('https://cxc.cfa.harvard.edu/mta/MSID_Trends/Gratgen/4lposaro/4lposaro_mid_static_long_plot.html')">4lposaro</th><td>&#160;</td><td>0.036</td><td>0.018</td><td>73.94 +/- 12.47</td><td>0.28 +/- 0.47</td><td>na</td><td>NA</td></tr>
+<tr><th><a href="javascript:WindowOpener3('https://cxc.cfa.harvard.edu/mta/MSID_Trends/Gratgen/4lposbro/4lposbro_mid_static_long_plot.html')">4lposbro</th><td>&#160;</td><td>0.038</td><td>0.019</td><td>72.99 +/- 12.82</td><td>0.36 +/- 0.48</td><td>na</td><td>NA</td></tr>
+<tr><th><a href="javascript:WindowOpener3('https://cxc.cfa.harvard.edu/mta/MSID_Trends/Gratgen/4mp28av/4mp28av_mid_static_long_plot.html')">4mp28av</th><td>&#160;</td><td>0.013</td><td>0.001</td><td>0.41 +/- 0.73</td><td>-0.01 +/- 0.02</td><td>V</td><td>MCE A: +28 VOLT MONITOR</td></tr>
+<tr><th><a href="javascript:WindowOpener3('https://cxc.cfa.harvard.edu/mta/MSID_Trends/Gratgen/4mp28bv/4mp28bv_mid_static_long_plot.html')">4mp28bv</th><td>&#160;</td><td>0.079</td><td>0.005</td><td>2.02 +/- 3.22</td><td>-0.03 +/- 0.12</td><td>V</td><td>MCE B: +28 VOLT MONITOR</td></tr>
+<tr><th><a href="javascript:WindowOpener3('https://cxc.cfa.harvard.edu/mta/MSID_Trends/Gratgen/4mp5av/4mp5av_mid_static_long_plot.html')">4mp5av</th><td>&#160;</td><td>0.019</td><td>0.001</td><td>0.49 +/- 0.78</td><td>-0.01 +/- 0.03</td><td>V</td><td>MCE A: +5 VOLT MONITOR</td></tr>
+<tr><th><a href="javascript:WindowOpener3('https://cxc.cfa.harvard.edu/mta/MSID_Trends/Gratgen/4mp5bv/4mp5bv_mid_static_long_plot.html')">4mp5bv</th><td>&#160;</td><td>0.014</td><td>8.331e-04</td><td>0.37 +/- 0.59</td><td>-0.01 +/- 0.02</td><td>V</td><td>MCE B: +5 VOLT MONITOR</td></tr>
+</table>
+</ul >
+<br />
+
+
+
+
+<hr />
+<p>
+<em>
+If you have any questions, please contact:
+<a href='mailto:swolk@head.cfa.harvard.edu'>swolk@head.cfa.harvard.edu</a>
+</em>
+</p>
+
+</body>
+</html>
